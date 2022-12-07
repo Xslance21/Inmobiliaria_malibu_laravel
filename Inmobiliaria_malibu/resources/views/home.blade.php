@@ -1,7 +1,115 @@
 @extends('layouts.app')
 @section('title', __('Dashboard'))
 @section('content')
-<div class="container-fluid">
+<style>
+	header{
+		background-color: #ff971d;
+		color: white;
+	}
+	li{
+		font-family: 'Times New Roman', Times, serif;
+		font-size: 200%;
+	}
+</style>
+<header>
+	<div class="container" id="Malibu">
+		<div class="row">
+			<div class="col">
+				<img src="{{ asset('assets/logo.svg')}}" alt="X">
+				<h1>Inmobiliaria_malibu</h1>
+			</div>
+		</div>
+	</div>
+</header>
+<div class="container">
+	<div class="row my-5 p-3 bg-light">
+		<div class="col-sm-12 col-md-6 col-lg-6">
+			<img src="{{ asset('assets/Casa1.jpeg') }}" alt="X" width="100%">
+		</div>
+		<div class="col-sm-12 col-md-6 col-lg-6 my-auto">
+			<ul>
+				<li>
+					Design: Moderno
+				</li>
+				<li>
+					Price: $200,000
+				</li>
+				<li>
+					Adress: Malibu Avn South 142
+				</li>
+				<li>
+					Measures: 300 m2
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="row my-5 p-3 bg-light">
+		<div class="col-sm-12 col-md-6 col-lg-6">
+			<img src="{{ asset('assets/Casa2.jpeg') }}" alt="X" width="100%">
+		</div>
+		<div class="col-sm-12 col-md-6 col-lg-6 my-auto">
+			<ul>
+				<li>
+					Design: Moderno
+				</li>
+				<li>
+					Price: $500,000
+				</li>
+				<li>
+					Adress: Malibu Avn South 245
+				</li>
+				<li>
+					Measures: 600 m2
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="row my-5 p-3 bg-light">
+		<div class="col-sm-12 col-md-6 col-lg-6">
+			<img src="{{ asset('assets/Casa3.jpeg') }}" alt="X" width="100%">
+		</div>
+		<div class="col-sm-12 col-md-6 col-lg-6 my-auto">
+			<ul>
+				<li>
+					Design: Clasico
+				</li>
+				<li>
+					Price: $120,000
+				</li>
+				<li>
+					Adress: Washington Avn North 48
+				</li>
+				<li>
+					Measures: 150 m2
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="row my-5 p-3 bg-light">
+		<div class="col-sm-12 col-md-6 col-lg-6">
+			<img src="{{ asset('assets/Casa4.jpeg') }}" alt="X" width="100%">
+		</div>
+		<div class="col-sm-12 col-md-6 col-lg-6 my-auto">
+			<ul>
+				<li>
+					Design: Moderno
+				</li>
+				<li>
+					Price: $250,000
+				</li>
+				<li>
+					Adress: Los Angeles High Hills 208
+				</li>
+				<li>
+					Measures: 200 m2
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+@endsection
+<!-- <div class="container-fluid">
 <div class="row justify-content-center">
 	<div class="col-md-12">
 		<div class="card">
@@ -45,5 +153,4 @@
 		</div>
 	</div>
 </div>
-</div>
-@endsection
+</div> -->

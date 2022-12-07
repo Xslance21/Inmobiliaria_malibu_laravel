@@ -14,7 +14,19 @@
 				Please contact admin to get your Login Credentials or click "Login" to go to your Dashboard.
                 
 			@else
-					Hi {{ Auth::user()->name }}, Welcome back to {{ config('app.name', 'Laravel') }}.
+                <div class="container">
+                    <div class="row my-5">
+                        <div class="col">
+                            Hi {{ Auth::user()->name }}, Bienvenido otra vez a la Inmobiliaria malibu, una empresa dedicada para aquellas personas 
+                            que con su riqueza se pueden permitir comprar casas con carrito como si fuera un cereal más.
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <img src="{{ asset('assets/Casa5.jpeg') }}" alt="x" width="80%" height="70%">
+                        </div>
+                    </div>
+                </div>
             @endif	
 				</h5>
             </div>
